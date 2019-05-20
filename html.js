@@ -1,40 +1,22 @@
-// class details {
-//   constructor(merk, kleur) {
-//     this.merk = merk;
-//     this.kleur = kleur;
-//   }
-// }
-
   class gitaar {
-    constructor(harley, rood) {
-    this.merk = harley;
-    this.kleur = rood;
-      //   this.details =[]
-      
-    // this.details.push(new details);  
-
+    constructor(merk, kleur) {
+    this.merk = merk;
+    this.kleur = kleur;
     }
 }
 
-class drumstel {
-  constructor(thompson, roze) {
-    this.merk = thompson;
-    this.kleur = roze;
-    // this.fabrikant = harley;
-    // this.kleur = rood;
-    
+let gitaar1 = new gitaar('Harley', 'rood');
+let gitaar2 = new gitaar('Davidson', 'zwart');
 
-  }
+class drumstel {
+  constructor(merk, kleur) {
+    this.merk = kleur;
+    this.kleur = merk;
+   }
 }
 
-this.instrumenten = [];
+let instrumenten = [];
 
-this.instrumenten.push(new gitaar);
-this.instrumenten.push(new drumstel);
+instrumenten.push(gitaar1, gitaar2);
 
-
-// function myFunction() {
-//     for (var x = 0; x < instrumenten.length; x++) {  
-//       document.getElementById("verzameling").innerHTML = instrumentten; }}
-
-   console.log(instrumenten)
+console.log(instrumenten)
